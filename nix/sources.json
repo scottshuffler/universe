@@ -42,7 +42,7 @@
         "owner": "google",
         "repo": "go-containerregistry",
         "rev": "e39e523c09e69c3dd6c45b2fcf597da664a5161c",
-        "sha256": "0n88rm8ynh030f6580a1p69qz1dzz90zpmic08d19msak40v9r8x",
+        "sha256": "0ry0gfpaj1fk41w33kwnx05aqjjdlm6znssgyfqs9yf6spj1m6wi",
         "type": "tarball",
         "url": "https://github.com/google/go-containerregistry/archive/e39e523c09e69c3dd6c45b2fcf597da664a5161c.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
@@ -101,10 +101,10 @@
         "homepage": "",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "b12d559675fe3c1269820404e9226fb42f4c9a87",
-        "sha256": "1inn5vxl69j7827dwh0kbzk53kx1lcp0987n93xamhmiy3kn5bw2",
+        "rev": "f5590abfd85ee487de1725734d5b0815535f2eca",
+        "sha256": "0y2bk754vy3mnrnba4n8ny9z52v7zb35v3k41s9zjviqhmbi1yk3",
         "type": "tarball",
-        "url": "https://github.com/NixOS/nixpkgs/archive/b12d559675fe3c1269820404e9226fb42f4c9a87.tar.gz",
+        "url": "https://github.com/NixOS/nixpkgs/archive/f5590abfd85ee487de1725734d5b0815535f2eca.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "okteto": {
