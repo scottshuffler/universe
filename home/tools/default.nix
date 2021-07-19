@@ -15,6 +15,7 @@ in
     # misc
     curl
     fzf
+    bat
     htop
     jq
     coreutils
