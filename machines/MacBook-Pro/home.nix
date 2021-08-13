@@ -14,6 +14,10 @@ in
     ../../home/git/ncr
   ];
 
+  programs.zsh.sessionVariables = {
+    GOPRIVATE = "github.com/ncr-swt-retail";
+  };
+
   programs.git.extraConfig = {
     # use my personal identity my person
     includeIf."gitdir:~/dev/shimmerjs/" = {

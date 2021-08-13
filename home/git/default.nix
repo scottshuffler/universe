@@ -22,7 +22,11 @@
 
       # pull 
       pull = {
-        rebase = "false";
+        rebase = "true";
+      };
+
+      core = {
+        editor = "vim";
       };
     };
   };

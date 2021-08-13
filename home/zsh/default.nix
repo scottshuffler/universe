@@ -30,7 +30,7 @@ in
       batdiff = "git diff --name-only --diff-filter=d | xargs bat --diff";
     };
     shellAliases = {
-      ls = "ls -A";
+      ls = "ls -A --color=auto";
     };
     history = {
       save = 1000000000;

@@ -25,6 +25,9 @@ in
     pandoc
     graphviz # a picture is worth a thousand words
 
+    # text editors
+    vim
+
     # build tools
     just
     bazelisk
