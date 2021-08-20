@@ -53,11 +53,12 @@
         "homepage": "https://rycee.gitlab.io/home-manager/",
         "owner": "rycee",
         "repo": "home-manager",
-        "rev": "57518cd0bf2487403414da193ebc98c7f51c6842",
-        "sha256": "1zf1pf02j45sdc40n35d9wn5sjwxyr0i1y6x1115smzpdj0qmzjx",
+        "rev": "bf6b85136b47ab1a76df4a90ea4850871147494a",
+        "sha256": "11ssh8w6cy9mh233sc8a3sw4fkkj1z9fkqfsiljc404kb7p4jrhl",
         "type": "tarball",
-        "url": "https://github.com/rycee/home-manager/archive/57518cd0bf2487403414da193ebc98c7f51c6842.tar.gz",
-        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+        "url": "https://github.com/rycee/home-manager/archive/bf6b85136b47ab1a76df4a90ea4850871147494a.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz",
+        "version": "21.11"
     },
     "jfrog-cli": {
         "branch": "master",
@@ -69,6 +70,18 @@
         "sha256": "0cyfyc6xh5xxzhddpy2kk5y36z00bysy6nr2cdk8nd8aiw53fqlj",
         "type": "tarball",
         "url": "https://github.com/jfrog/jfrog-cli/archive/42214d7bda5323e0143d264ee03aca6663e73a2a.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
+    "kinto": {
+        "branch": "master",
+        "description": "Mac-style shortcut keys for Linux & Windows.",
+        "homepage": "http://kinto.sh",
+        "owner": "rbreaves",
+        "repo": "kinto",
+        "rev": "e69e529a18a45c8190a15dbe4ebfb8be0e3f73d8",
+        "sha256": "0i86iar0qhy39zdmhv17pqcf6fpxfy57617l61a9p91v5qpgck31",
+        "type": "tarball",
+        "url": "https://github.com/rbreaves/kinto/archive/e69e529a18a45c8190a15dbe4ebfb8be0e3f73d8.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "kpt": {
@@ -101,11 +114,12 @@
         "homepage": "",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "f5590abfd85ee487de1725734d5b0815535f2eca",
-        "sha256": "0y2bk754vy3mnrnba4n8ny9z52v7zb35v3k41s9zjviqhmbi1yk3",
+        "rev": "253aecf69ed7595aaefabde779aa6449195bebb7",
+        "sha256": "14szn1k345jfm47k6vcgbxprmw1v16n7mvyhcdl7jbjmcggjh4z7",
         "type": "tarball",
-        "url": "https://github.com/NixOS/nixpkgs/archive/f5590abfd85ee487de1725734d5b0815535f2eca.tar.gz",
-        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+        "url": "https://github.com/NixOS/nixpkgs/archive/253aecf69ed7595aaefabde779aa6449195bebb7.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz",
+        "version": "21.11"
     },
     "okteto": {
         "branch": "master",

@@ -10,7 +10,14 @@ in
     ./hardware
     "${sources.home-manager}/nixos"
     ../../system
+    ../../system/security/yubikey.nix
   ];
+
+  environment.systemPackages = with pkgs; [
+yubikey-personalization
+yubikey-personalization-gui
+yubioath-desktop
+];
 
   home-manager.users.shimmerjs = import ./home;
 
@@ -25,6 +32,20 @@ in
   };
 
   networking.hostName = "herq";
+
+  services.xserver = {
+    enable = true;
+    displayManager = {
+      gdm = {
+        enable = true;
+      };
+    };
+    desktopManager = {
+      gnome = {
+        enable = true;
+      };
+    };
+  };
 
   # fetched this via `vagrant ssh-config`, should automate in future
   programs.ssh.extraConfig = ''

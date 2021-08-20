@@ -1,3 +1,4 @@
+{ pkgs, ... }:
 {
   imports = [
     ../../../home
@@ -5,6 +6,14 @@
     ../../../nix/config
     ./git.nix
     ./dazel.nix
+    ./bspwm.nix
+  ];
+
+  programs.firefox.enable = true;
+
+  home.packages = with pkgs; [
+    xdotool
+    tdesktop
   ];
 
   home.file.".docker/config.json".text = ''

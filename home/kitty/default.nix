@@ -32,6 +32,9 @@
       startup_session = "sessions/default.conf";
 
       enabled_layouts = "vertical";
+
+      # clipboard control, enable reading from clipboard
+      clipboard_control = "write-clipboard read-clipboard write-primary read-primary";
     };
     keybindings = {
       # tabs
