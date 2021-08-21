@@ -6,7 +6,6 @@
     ../../../nix/config
     ./git.nix
     ./dazel.nix
-    ./bspwm.nix
   ];
 
   programs.firefox.enable = true;
