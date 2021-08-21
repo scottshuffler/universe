@@ -1,5 +1,7 @@
 { pkgs, ... }:
 {
+  security.pam.services.gdm.yubicoAuth = true;
+
   environment.systemPackages = with pkgs; [
     yubikey-personalization
     yubikey-personalization-gui

@@ -11,7 +11,6 @@
   programs.firefox.enable = true;
 
   home.packages = with pkgs; [
-    xdotool
     tdesktop
   ];
 

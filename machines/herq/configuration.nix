@@ -8,26 +8,10 @@ in
 {
   imports = [
     ./hardware
+    ./yubikey.nix
     "${sources.home-manager}/nixos"
     ../../system
-    ../../system/security/yubikey.nix
   ];
-
-  environment.systemPackages = with pkgs; [
-    yubikey-personalization
-    yubikey-personalization-gui
-    yubioath-desktop
-    yubico-pam
-  ];
-
-  security.pam.yubico = {
-    enable = true;
-    debug = true;
-    mode = "challenge-response";
-  };
-
-  security.pam.services.gdm.yubicoAuth = true;
-
 
   home-manager.users.shimmerjs = import ./home;
 
@@ -40,6 +24,12 @@ in
   boot.kernel.sysctl = {
     "fs.inotify.max_user_watches" = "1048576";
   };
+
+  virtualisation.libvirtd.enable = true;
+
+  environment.systemPackages = with pkgs; [
+    virt-manager
+  ];
 
   networking.hostName = "herq";
 
