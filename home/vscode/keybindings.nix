@@ -47,7 +47,7 @@
 
   # lines
   # default on OSX
-  { key = "cmd+/"; command = "editor.action.commandLint"; when = "editorTextFocus && !editorReadonly"; }
+  { key = "cmd+/"; command = "editor.action.commentLine"; when = "editorTextFocus && !editorReadonly"; }
   { key = "cmd+l"; command = "expandLineSelection"; when = "editorFocus"; }
   { key = "cmd+shift+l"; command = "editor.action.insertCursorAtEndOfEachLineSelected"; when = "editorTextFocus"; }
   { key = "cmd+j"; command = "editor.action.joinLines"; when = "editorTextFocus"; }
