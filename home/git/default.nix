@@ -17,7 +17,7 @@
           if stdenv.isLinux then
             "${pkgs.gitAndTools.pass-git-helper}/bin/pass-git-helper" else
             "osxkeychain";
-        useHttpPath = true;
+        useHttpPath = false;
       };
 
       # pull 
