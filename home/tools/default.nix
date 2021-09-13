@@ -52,7 +52,7 @@ in
     # use node 12 because we need to hotswap the node binary vscode
     # server brings ^ _ ^
     # https://github.com/microsoft/vscode-remote-release/issues/648#issuecomment-503148523
-    nodejs-12_x
+    nodejs-14_x
     nixpkgs-fmt
     (python3.withPackages
       # install pip because its not included with the python3 nixpkg by
