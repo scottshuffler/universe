@@ -12,6 +12,10 @@ in
   home.packages = with pkgs; [
     # tools that are pulled from nixpkgs
 
+    # virtualization
+    qemu
+    podman
+
     # misc
     curl
     fzf
