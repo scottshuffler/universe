@@ -9,11 +9,12 @@
       Host edge-dev
         HostName 192.168.122.125
         User shimmerjs
-        ProxyJump herq
+        ForwardAgent yes
+        ProxyJump shimmerjs@herq
         UserKnownHostsFile /dev/null
         StrictHostKeyChecking no
         PasswordAuthentication no
-        IdentityFile /home/shimmerjs/.ssh/edge-dev
+        IdentityFile ~/.ssh/edge-dev
         IdentitiesOnly yes
         LogLevel FATAL
     '';
