@@ -12,6 +12,7 @@
 
   home.packages = with pkgs; [
     tdesktop
+    ssh-import-id
   ];
 
   home.file.".docker/config.json".text = ''

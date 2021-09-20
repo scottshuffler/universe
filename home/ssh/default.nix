@@ -7,13 +7,13 @@
         User shimmerjs
       
       Host edge-dev
-        HostName 192.168.121.196
-        User vagrant
-        ProxyJump shimmerjs@herq
+        HostName 192.168.122.125
+        User shimmerjs
+        ProxyJump herq
         UserKnownHostsFile /dev/null
         StrictHostKeyChecking no
         PasswordAuthentication no
-        IdentityFile ~/.ssh/edge-dev-vagrant-ssh-key
+        IdentityFile /home/shimmerjs/.ssh/edge-dev
         IdentitiesOnly yes
         LogLevel FATAL
     '';
