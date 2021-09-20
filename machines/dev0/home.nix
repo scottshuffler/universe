@@ -1,5 +1,5 @@
 # NCR workbook
-{ config, ... }:
+{ pkgs, config, ... }:
 let
   # import raw sources to use github sources
   sources = import ../../nix/sources.nix;
@@ -10,7 +10,28 @@ in
   imports = [
     ../../nix/config
     ../../home
-    ../../home/git
-    ../../home/git/ncr
+  ];
+
+  programs.git = {
+    enable = true;
+    userName = "alex weidner";
+    extraConfig = {
+      include = {
+        path = "~/.config/git/ncr";
+      };
+      pull = {
+        rebase = false;
+      };
+
+      core = {
+        editor = "vim";
+      };
+    };
+  };
+
+  # TODO: clean up, this is duped from home/git/ncr
+  home.file.".config/git/ncr".text = builtins.readFile ../../home/git/ncr/gitconfig;
+  home.packages = with pkgs; [
+    gitAndTools.git-crypt
   ];
 }
