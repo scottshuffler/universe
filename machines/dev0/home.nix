@@ -10,18 +10,7 @@ in
   imports = [
     ../../nix/config
     ../../home
+    ../../home/git
+    ../../home/git/ncr
   ];
-
-  programs.git = {
-    enable = true;
-    userName = "alex weidner";
-    extraConfig = {
-      include = {
-        path = "~/.config/git/ncr";
-      };
-    };
-  };
-
-  # TODO: clean up, this is duped from home/git/ncr
-  home.file.".config/git/ncr".text = builtins.readFile ../../home/git/ncr/gitconfig;
 }
