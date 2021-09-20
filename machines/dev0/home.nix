@@ -16,6 +16,9 @@ in
     enable = true;
     userName = "alex weidner";
     extraConfig = {
+      credential = {
+        helper = "!$(which git) auth git-credential";
+      };
       include = {
         path = "~/.config/git/ncr";
       };
