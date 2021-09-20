@@ -22,7 +22,7 @@
 
       # pull 
       pull = {
-        rebase = "true";
+        rebase = "false";
       };
 
       core = {
