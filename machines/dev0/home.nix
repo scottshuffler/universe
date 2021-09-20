@@ -17,7 +17,7 @@ in
     userName = "alex weidner";
     extraConfig = {
       credential = {
-        helper = "!$(which git) auth git-credential";
+        helper = "!$(which gh) auth git-credential";
       };
       include = {
         path = "~/.config/git/ncr";
